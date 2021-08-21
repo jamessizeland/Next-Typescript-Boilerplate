@@ -1,118 +1,72 @@
-[![react-next-boilerplate](./docs/images/nv-rnb.png)](https://www.reactnextboilerplate.com/)
+# Next.js TypeScript React Project Template
 
-<div align="center">
-  We spend time using good community practices to make your project scalable.
-</div>
+This project uses [React](https://facebook.github.io/react/), [TypeScript](https://typescriptlang.org/) and [Next.js](https://nextjs.org/).
 
-<br />
+It comes with a style guide based on the eslint recommendations and the [airbnb style guide](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 
-<div align="center">
-  <!-- BUILD STATUS -->
-  <a href="https://travis-ci.com/react-next-boilerplate/react-next-boilerplate/builds">
-    <img src="https://img.shields.io/github/v/tag/react-next-boilerplate/react-next-boilerplate?color=000000&label=version&logo=version&style=flat-square" alt="Build Status" />
-  </a>
+Use the [TypeScript Language Docs](https://www.typescriptlang.org/docs/) and the [TypeScript Cheatsheets](https://github.com/typescript-cheatsheets/react#hooks) as well as [this article](https://www.sitepoint.com/react-with-typescript-best-practices/)
 
-  <!-- TEST COVERAGE -->
-  <a href='https://coveralls.io/github/react-next-boilerplate/react-next-boilerplate?branch=master'>
-    <img src='https://img.shields.io/coveralls/github/react-next-boilerplate/react-next-boilerplate/master?style=flat-square' alt='Coverage Status' />
-  </a>
+## Getting Started
 
-  <!-- QUALITY -->
-  <a href="https://app.codacy.com/manual/react-next-boilerplate/react-next-boilerplate/dashboard?bid=14562912">
-    <img src="https://img.shields.io/codacy/grade/ee2b85244d434adaa5aa04470fcdde48?style=flat-square" alt="Quality" />
-  </a>
+First, clone the repo via git and install dependencies by running:
 
-  <!-- ISSUES -->
-  <a href="https://github.com/react-next-boilerplate/react-next-boilerplate/issues">
-    <img src="https://img.shields.io/github/issues/react-next-boilerplate/react-next-boilerplate?style=flat-square" alt="issues" />
-  </a>
+```bash
+yarn
+```
 
-  <!-- MIT -->
-  <a href="https://github.com/react-next-boilerplate/react-next-boilerplate/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/react-next-boilerplate/react-next-boilerplate?style=flat-square" alt="MIT" />
-  </a>
+### Starting Development
 
-  <!-- CONTRIBUTORS -->
-  <a href="https://github.com/react-next-boilerplate/react-next-boilerplate/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/react-next-boilerplate/react-next-boilerplate?style=flat-square" alt="Contributors" />
-  </a>
+Start the app in the `dev` environment:
 
-</div>
+```bash
+yarn dev
+```
 
-<div align="center">
+### Packaging for Production
 
-  <!-- DISCORD -->
-  <a href="https://discord.gg/ANbWXGs">
-    <img src="https://img.shields.io/discord/680982918541082638?color=%237289DA&logo=discord&style=flat-square" alt="Discord" />
-  </a>
+To package apps for deployment use:
 
-  <!-- TWITTER -->
-  <a href="https://twitter.com/RNBoilerplate">
-    <img src="https://img.shields.io/twitter/url?label=%40RNBoilerplate&logo=twitter&style=flat-square&url=https%3A%2F%2Ftwitter.com%2FRNBoilerplate" alt="Twitter" />
-  </a>
-
-</div>
-
-<div align="center">
-  <sub>:rocket: A basis for reducing the configuration of your projects with <strong>Next.js</Strong>, best development practices and popular libraries in the developer community.</sub>
-</div>
+```bash
+yarn build
+```
 
 ## Features
 
+- [x] **EditorConfig**: This helps your editor produce code that looks like your style guide as you go. While this isn't strictly necessary in order to achieve your goals, it's nice if you're always looking at code that follows the same coding styles. Otherwise if you don't have EditorConfig, as you're typing your editor will auto-format differently to the rest of the code base, which is confusing. Of course if you've set up prettier it'll fix it before it goes into your code base, but still, why would you want to look at it in one format while you're writing it and then have it switch when you go to commit? Might as well be consistent.
+
+- [x] **Prettier**: Automatically formats your code. I like to set it up to do this when I stage my files for a commit, so that it's physically impossible for me to commit code that doesn't match my style guide.
+
+- [x] **ESLint**: So why would you want a linter too? Because ESLint does more than just style. It picks up when you declare variables you don't use, or reference things that aren't defined, amongst a few other niceties. So while its role diminishes somewhat compared to the days before prettier, it's still useful to have in a project to catch the other errors.
+
 - [x] **redux-saga**: A library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures.
+
 - [x] **redux-saga-routines**: A smart action creator for Redux. Useful for any kind of async actions like fetching data. Also fully compatible with Redux Saga and Redux Form.
+
 - [x] **next-i18next**: A plugin for [Next.js](https://nextjs.org/) projects that allows you to get translations up and running quickly and easily, while fully supporting SSR, multiple namespaces with code splitting, etc.
+
 - [x] **i18next**: An internationalization-framework written in and for JavaScript. But it's much more than that.
+
 - [x] **redux**: A predictable state container for JavaScript apps.
+
 - [x] **reselect**: Simple selector library for Redux (and others) inspired by getters in [NuclearJS](https://optimizely.github.io/nuclear-js/), subscriptions in re-frame and this proposal from speedskater.
+
 - [x] **Immer**: (German for: always) is a tiny package that allows you to work with immutable state in a more convenient way. It is based on the copy-on-write mechanism
+
 - [x] **@testing-library/react**: Simple and complete React DOM testing utilities that encourage good testing practices.
+
 - [x] **SEO**: The advantages of this approach is to be able to create Rich User experiences in a uniform way, without compromising Search Engine Optimisation (SEO) factors that are key to good ranking on Google and other search engines.
+
 - [x] **Typefaces**: Self-hosting is significantly faster. Loading a typeface from Google Fonts or other hosted font service adds an extra (blocking) network request.
+
 - [x] **Emotion**: A library designed for writing css styles with JavaScript. It provides powerful and predictable style composition in addition to a great developer experience with features such as source maps, labels, and testing utilities.
-
-# Getting Started
-
-Welcome to the light documentation of React Next Boilerplate!
-
-## System Requirements
-
-- [Node.js](https://nodejs.org/en/) 10 or later
-- MacOS, Windows (including WSL), and Linux are supported
-
-## Setup
-
-1. Clone this repo using `git clone --depth=1 https://github.com/react-next-boilerplate/react-next-boilerplate.git <YOUR_PROJECT_NAME>`
-2. Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.
-3. Run `yarn` or `npm install` to install dependencies .
-4. Run `yarn dev` or `npm run dev` to see the example app at `http://localhost:3000`.
-
-These scripts refer to the different stages of developing an application:
-
-- `dev` - Runs `next` which starts Next.js in development mode
-- `build` - Runs `next` build which builds the application for production usage
-- `start` - Runs `next` start which starts a Next.js production server
-
-Now you're ready to rumble! :traffic_light:
-
-## Documentation
-
-- [Commands](./docs/general/commands.md): Getting the most out of this boilerplate
-
-## [Demo](https://react-next-boilerplate.vercel.app)
-
-## Code of Conduct
-
-React Next Boilerplate is dedicated to building a welcoming, diverse, safe community. We expect everyone participating in the React Next Boilerplate community to abide by our [Code of Conduct](./CODE_OF_CONDUCT.md). Please read it. Please follow it. In the React Next Boilerplate community, we work hard to build each other up and create amazing things together.
-
-## Contributing
-
-Thank you for your interest in contributing; we are delighted you want to help out. We have a [contributing guide](./CONTRIBUTING.md) to help you get started.
 
 ## License
 
-This project is licensed under the MIT license, Copyright (c) 2019 Jorge Luis Calleja Alvarado. For more information see [project license](./LICENSE).
+MIT ©
 
-## Authors
+Generated from:
 
-- Jorge Luis Calleja Alvarado ([@wootsbot](https://twitter.com/wootsbot)) – [React Next Boilerplate](https://www.reactnextboilerplate.com/)
+- [React Next Boilerplate](https://www.reactnextboilerplate.com/)
+- [this article](https://betterprogramming.pub/complete-guideline-to-creating-a-modern-react-app-with-typescript-from-scratch-cebbb5817d8)
+- [Electron React Boilerplate](https://electron-react-boilerplate.js.org/)
+- [Airbnb styleguide setup](https://www.youtube.com/watch?v=SydnKbGc7W8&t=992s)
