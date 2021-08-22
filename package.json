@@ -23,10 +23,10 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "*.ts": [
       "eslint --fix"
     ],
-    "./**/*.+(js|json|jsx)": [
+    "./**/*.+(ts|json|tsx)": [
       "prettier --write"
     ]
   },
@@ -62,12 +62,13 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "@types/react": "^17.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-plugin-dynamic-import-node": "^2.3.0",
     "coveralls": "^3.0.9",
     "cross-env": "^7.0.0",
-    "eslint": "^6.0.0",
+    "eslint": "^7.25.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-typescript": "^13.0.0",
     "eslint-config-next": "^11.1.0",
