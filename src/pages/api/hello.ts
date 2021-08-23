@@ -1,12 +1,14 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
+// generic API at route /api/hello
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 type Data = {
   name: string;
 };
 
-function handler(req: NextApiRequest, res: NextApiResponse<Data>): void {
+const handler = (req: NextApiRequest, res: NextApiResponse<Data>): void => {
   res.status(200).json({ name: 'John Doe' });
-}
+};
 
 export default handler;
