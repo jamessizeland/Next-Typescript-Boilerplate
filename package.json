@@ -12,9 +12,8 @@
     "test": "npm run test:unit",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "lint": "npm run lint:js",
-    "lint:js": "eslint src --fix",
-    "prettier": "prettier --config .prettierrc \"./**/*.+(js|json|jsx)\" --write",
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "prettier": "prettier --config .prettierrc.js \"./**/*.+(js|json|jsx)\" --write",
     "clean:example": "rnb --c"
   },
   "husky": {
@@ -23,7 +22,7 @@
     }
   },
   "lint-staged": {
-    "*.ts": [
+    "./**/*.+(ts|tsx|js|jsx|json)": [
       "eslint --fix"
     ],
     "./**/*.+(ts|json|tsx)": [
