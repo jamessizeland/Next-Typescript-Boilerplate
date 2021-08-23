@@ -12,9 +12,8 @@
     "test": "npm run test:unit",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "lint": "npm run lint:js",
-    "lint:js": "eslint src --fix",
-    "prettier": "prettier --config .prettierrc \"./**/*.+(js|json|jsx)\" --write",
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "prettier": "prettier --config .prettierrc.js \"./**/*.+(js|json|jsx)\" --write",
     "clean:example": "rnb --c"
   },
   "husky": {
@@ -23,10 +22,10 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "./**/*.+(ts|tsx|js|jsx|json)": [
       "eslint --fix"
     ],
-    "./**/*.+(js|json|jsx)": [
+    "./**/*.+(ts|json|tsx)": [
       "prettier --write"
     ]
   },
@@ -55,21 +54,29 @@
     "signale": "^1.4.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.10.2",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
     "@emotion/babel-plugin": "^11.1.2",
     "@r-next-b/cli": "^0.1.1",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "@types/react": "^17.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-plugin-dynamic-import-node": "^2.3.0",
     "coveralls": "^3.0.9",
     "cross-env": "^7.0.0",
-    "eslint": "^6.0.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^13.0.0",
+    "eslint-config-next": "^11.1.0",
     "eslint-config-prettier": "^5.0.0",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jest": "^22.7.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
@@ -77,8 +84,10 @@
     "husky": "^2.4.1",
     "jest-cli": "^24.9.0",
     "lint-staged": "^10.0.3",
-    "prettier": "^1.18.2",
+    "prettier": "^2.2.1",
     "react-test-renderer": "^17.0.1",
+    "sass": "^1.38.0",
+    "typescript": "^4.3.5",
     "whatwg-fetch": "^3.0.0"
   }
 }
