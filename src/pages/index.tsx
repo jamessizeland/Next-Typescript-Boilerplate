@@ -1,22 +1,18 @@
 import React from 'react';
-import { NextPage } from 'next';
-import Head from 'next/head';
+// import Head from 'next/head';
 // import Image from 'next/image';
+import Layout from '../components/Layouts';
 import styles from '../styles/Home.module.scss';
+
+import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Next App</title>
-        <meta
-          name="description"
-          content="Built from jsizeland/Next-Typescript-Boilerplate"
-        />
-        <link rel="icon" href="/longtail.png" />
-      </Head>
-      <h1>Hello World</h1>
-    </div>
+    <Layout title="Home | Next.js">
+      <div className={styles.container}>
+        <h1>Hello World</h1>
+      </div>
+    </Layout>
   );
 };
 
