@@ -2,7 +2,6 @@
   "name": "react-next-boilerplate",
   "version": "1.2.0",
   "main": "index.js",
-  "author": "Jorge Luis Calleja <jorgelca1205@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
@@ -11,10 +10,8 @@
     "test:unit": "cross-env NODE_ENV=test jest --coverage",
     "test": "npm run test:unit",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
-    "prettier": "prettier --config .prettierrc.js \"./**/*.+(js|json|jsx)\" --write",
-    "clean:example": "rnb --c"
+    "prettier": "prettier --config .prettierrc.js \"./**/*.+(js|json|jsx)\" --write"
   },
   "husky": {
     "hooks": {
@@ -23,10 +20,12 @@
   },
   "lint-staged": {
     "./**/*.+(ts|tsx|js|jsx|json)": [
-      "eslint --fix"
+      "eslint --fix",
+      "git add --all"
     ],
     "./**/*.+(ts|json|tsx)": [
-      "prettier --write"
+      "prettier --write",
+      "git add --all"
     ]
   },
   "dependencies": {

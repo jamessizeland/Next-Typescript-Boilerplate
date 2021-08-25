@@ -54,7 +54,7 @@ yarn build
 
 - [x] **Typefaces**: Self-hosting is significantly faster. Loading a typeface from Google Fonts or other hosted font service adds an extra (blocking) network request.
 
-- [x] **Emotion**: A library designed for writing css styles with JavaScript. It provides powerful and predictable style composition in addition to a great developer experience with features such as source maps, labels, and testing utilities.
+- [x] **CSS-Modules**: Component-scoped CSS allows you to write traditional, portable CSS with minimal side effects: gone are the worries of selector name collisions or affecting other components’ styles.
 
 ## License
 
