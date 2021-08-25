@@ -1,0 +1,22 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 45px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.logo {
+  width: 110px;
+  border-radius: 20%;
+}

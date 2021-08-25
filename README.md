@@ -1,10 +1,10 @@
 # Next.js TypeScript React Project Template
 
-This project uses [React](https://facebook.github.io/react/), [TypeScript](https://typescriptlang.org/) and [Next.js](https://nextjs.org/).
+## Introduction
 
-It comes with a style guide based on the eslint recommendations and the [airbnb style guide](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
+This is a boilerplate foundation for creating other fullstack web applications from. I have taken inspiration from a number of sources and my past learning to pull together a slightly opinionated project template for my own development needs, but others are welcome to use as they like. I find this a good way of getting to understand a new framework, in this case Nextjs. This project uses [React](https://facebook.github.io/react/), [TypeScript](https://typescriptlang.org/) and [Next.js](https://nextjs.org/) and it comes with a style guide based on the eslint recommendations and the [airbnb style guide](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 
-Use the [TypeScript Language Docs](https://www.typescriptlang.org/docs/) and the [TypeScript Cheatsheets](https://github.com/typescript-cheatsheets/react#hooks) as well as [this article](https://www.sitepoint.com/react-with-typescript-best-practices/)
+Use the [TypeScript Language Docs](https://www.typescriptlang.org/docs/) and the [TypeScript Cheatsheets](https://github.com/typescript-cheatsheets/react#hooks) as well as [this article](https://www.sitepoint.com/react-with-typescript-best-practices/) for advice on typescript.
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ yarn
 
 ### Starting Development
 
-Start the app in the `dev` environment:
+Start the app in the development environment:
 
 ```bash
 yarn dev
@@ -38,13 +38,9 @@ yarn build
 
 - [x] **ESLint**: So why would you want a linter too? Because ESLint does more than just style. It picks up when you declare variables you don't use, or reference things that aren't defined, amongst a few other niceties. So while its role diminishes somewhat compared to the days before prettier, it's still useful to have in a project to catch the other errors.
 
-- [x] **redux-saga**: A library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures.
+<!-- - [x] **redux-saga**: A library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures.
 
 - [x] **redux-saga-routines**: A smart action creator for Redux. Useful for any kind of async actions like fetching data. Also fully compatible with Redux Saga and Redux Form.
-
-- [x] **next-i18next**: A plugin for [Next.js](https://nextjs.org/) projects that allows you to get translations up and running quickly and easily, while fully supporting SSR, multiple namespaces with code splitting, etc.
-
-- [x] **i18next**: An internationalization-framework written in and for JavaScript. But it's much more than that.
 
 - [x] **redux**: A predictable state container for JavaScript apps.
 
@@ -54,7 +50,7 @@ yarn build
 
 - [x] **@testing-library/react**: Simple and complete React DOM testing utilities that encourage good testing practices.
 
-- [x] **SEO**: The advantages of this approach is to be able to create Rich User experiences in a uniform way, without compromising Search Engine Optimisation (SEO) factors that are key to good ranking on Google and other search engines.
+- [x] **SEO**: The advantages of this approach is to be able to create Rich User experiences in a uniform way, without compromising Search Engine Optimisation (SEO) factors that are key to good ranking on Google and other search engines. -->
 
 - [x] **Typefaces**: Self-hosting is significantly faster. Loading a typeface from Google Fonts or other hosted font service adds an extra (blocking) network request.
 
@@ -66,6 +62,7 @@ MIT ©
 
 Generated from:
 
+- [Next Typescript Stripe Example](https://github.com/stripe-samples/nextjs-typescript-react-stripe-js)
 - [React Next Boilerplate](https://www.reactnextboilerplate.com/)
 - [this article](https://betterprogramming.pub/complete-guideline-to-creating-a-modern-react-app-with-typescript-from-scratch-cebbb5817d8)
 - [Electron React Boilerplate](https://electron-react-boilerplate.js.org/)

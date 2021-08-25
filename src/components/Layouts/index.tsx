@@ -1,6 +1,8 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
 import Header from '../Header';
+import Banner from '../Banner';
+import Footer from '../Footer';
 
 type Props = {
   children: ReactNode;
@@ -18,12 +20,11 @@ const Layout = ({
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <Header />
-    <div className="container">{children}</div>
-    <footer className="banner">
-      <span>
-        <p>This is a footer</p>
-      </span>
-    </footer>
+    <main>
+      <Banner />
+      {children}
+    </main>
+    <Footer />
   </>
 );
 

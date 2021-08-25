@@ -30,8 +30,6 @@
     ]
   },
   "dependencies": {
-    "@emotion/react": "^11.1.4",
-    "@emotion/styled": "^11.0.0",
     "@typefaces-pack/typeface-inter": "^1.0.3",
     "clsx": "^1.1.1",
     "express": "^4.17.1",
@@ -55,7 +53,6 @@
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.1",
-    "@emotion/babel-plugin": "^11.1.2",
     "@r-next-b/cli": "^0.1.1",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
