@@ -1,14 +1,18 @@
 import React from 'react';
-
+import Image from 'next/image';
 import style from './banner.module.scss';
+
+const pix = 150;
 
 const Banner = (): JSX.Element => {
   return (
     <div className={style.banner}>
-      <img
+      <Image
         className={style.logo}
         src="/longtail.png"
         alt="next-typescript-boilerplate"
+        width={pix}
+        height={pix}
       />
 
       <h1 className={style.title}>Title</h1>
