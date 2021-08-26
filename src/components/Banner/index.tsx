@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import style from './banner.module.scss';
 
-const pix = 150;
+const pix = 200;
 
 const Banner = (): JSX.Element => {
   return (

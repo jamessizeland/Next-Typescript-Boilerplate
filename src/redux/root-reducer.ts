@@ -3,7 +3,7 @@
 import { combineReducers } from 'redux';
 import userReducer from './user/user.reducer';
 import errorReducer from './errors/errors.reducer';
-import busyReducer from './loading/loading.reducer';
+import busyReducer from './busy/busy.reducer';
 
 export default combineReducers({
   user: userReducer,

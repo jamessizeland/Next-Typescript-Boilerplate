@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
 import Header from '../Header';
-import Banner from '../Banner';
 import Footer from '../Footer';
 
 type Props = {
@@ -20,10 +19,7 @@ const Layout = ({
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <Header />
-    <main>
-      <Banner />
-      {children}
-    </main>
+    <main>{children}</main>
     <Footer />
   </>
 );

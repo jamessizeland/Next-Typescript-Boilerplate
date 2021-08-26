@@ -13,7 +13,9 @@ const Header = (): JSX.Element => {
 
           <div className={style.space} />
 
-          <div className={style.listActions}></div>
+          <div className={style.listActions}>
+            <Link href="/debug">Debug</Link>
+          </div>
         </nav>
       </div>
     </div>
