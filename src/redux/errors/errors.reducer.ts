@@ -1,4 +1,4 @@
-// Controls state relating to the current user of this application
+// Controls state relating to the errors logged by this application
 
 export type ErrorType = { code: number; message: string };
 
