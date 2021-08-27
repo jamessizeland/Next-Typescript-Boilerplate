@@ -7,7 +7,7 @@ import Banner from '../components/Banner';
 
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <Layout title="Home | Next.js">
       <div className={'container'}>
@@ -18,4 +18,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomePage;

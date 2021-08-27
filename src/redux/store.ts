@@ -6,4 +6,7 @@ const middlewares = [logger]; // add more middleware here to be applied sequenti
 
 const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = ReturnType<typeof store.dispatch>;
+
 export default store;

@@ -34,51 +34,6 @@ module.exports = {
     },
   },
   ignorePatterns: ['/*.*'], // required to stop this file erroring itself
-  // rules: {
-  //   "prettier/prettier": [
-  //     "error",
-  //     {
-  //       "arrowParens": "avoid",
-  //       "singleQuote": true,
-  //       "jsxBracketSameLine": true,
-  //       "trailingComma": "es5",
-  //       "printWidth": 120,
-  //       "semi": true,
-  //       "endOfLine": "lf"
-  //     }
-  //   ],
-  //   "no-unused-vars": [
-  //     2,
-  //     {
-  //       "vars": "all",
-  //       "args": "after-used"
-  //     }
-  //   ],
-  //   "no-console": 1,
-  //   "max-len": [
-  //     "error",
-  //     {
-  //       "code": 120,
-  //       "ignoreUrls": true,
-  //       "ignoreComments": true
-  //     }
-  //   ],
-  //   "no-unexpected-multiline": "error",
-  //   "react/button-has-type": [
-  //     "error",
-  //     {
-  //       "button": true,
-  //       "submit": true,
-  //       "reset": true
-  //     }
-  //   ],
-  //   "react/destructuring-assignment": ["error", "always"],
-  //   "react-hooks/rules-of-hooks": "error",
-  //   "react/jsx-first-prop-new-line": [2, "multiline"],
-  //   "redux-saga/no-yield-in-race": 2,
-  //   "redux-saga/yield-effects": 2,
-  //   "require-yield": 0
-  // }
   rules: {
     'arrow-body-style': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -86,13 +41,13 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'no-unused-vars': 'off',
   },
-  overrides: [
-    {
-      // enable the rule specifically for TypeScript files
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        '@typescript-eslint/explicit-module-boundary-types': ['warn'],
-      },
-    },
-  ],
+  // overrides: [
+  //   {
+  //     // enable the rule specifically for TypeScript files
+  //     files: ['*.ts', '*.tsx'],
+  //     rules: {
+  //       '@typescript-eslint/explicit-module-boundary-types': ['warn'],
+  //     },
+  //   },
+  // ],
 };

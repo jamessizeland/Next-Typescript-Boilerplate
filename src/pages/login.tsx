@@ -3,7 +3,7 @@ import Layout from '../components/Layouts';
 
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const LoginPage: NextPage = () => {
   return (
     <Layout title="Login | Next.js">
       <div className={'container'}>
@@ -13,4 +13,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default LoginPage;

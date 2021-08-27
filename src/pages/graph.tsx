@@ -3,7 +3,7 @@ import Layout from '../components/Layouts';
 
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const GraphPage: NextPage = () => {
   return (
     <Layout title="Graph | Next.js">
       <div className={'container'}>
@@ -13,4 +13,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default GraphPage;
