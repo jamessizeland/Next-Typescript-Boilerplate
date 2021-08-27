@@ -4,7 +4,7 @@ export type UserActions = {
   type: 'SET_CURRENT_USER'; // add more actions here
   payload: string;
 };
-type UserState = {
+export type UserState = {
   currentUser: null | string;
 };
 
