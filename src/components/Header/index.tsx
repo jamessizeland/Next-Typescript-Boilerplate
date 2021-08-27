@@ -7,14 +7,16 @@ const Header = (): JSX.Element => {
     <div className={style.header}>
       <div className={style.headerContainer}>
         <nav className={style.navRoot}>
-          <div className={style.listItem}>
+          <div className={style.listItems}>
             <Link href="/">Home</Link>
+            <Link href="/graph">Graph</Link>
           </div>
 
           <div className={style.space} />
 
-          <div className={style.listActions}>
+          <div className={style.listItems}>
             <Link href="/debug">Debug</Link>
+            <Link href="/login">Login</Link>
           </div>
         </nav>
       </div>
