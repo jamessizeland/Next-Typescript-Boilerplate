@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import { connect } from 'react-redux';
-import type { RootState } from '../../redux/store';
+import { getUser } from '../../redux/user/user.slice';
+import { useAppSelector } from '../../redux/hooks';
 import style from './header.module.scss';
 
-const Header = ({ user }: RootState): JSX.Element => {
+const Header = (): JSX.Element => {
+  const user = useAppSelector(getUser); // pulled from redux global state
   return (
     <div className={style.header}>
       <div className={style.headerContainer}>
@@ -17,16 +18,11 @@ const Header = ({ user }: RootState): JSX.Element => {
           </div>
 
           <div className={style.space} />
-          <div className={style.listItems}>{user.currentUser}</div>
+          <div className={style.listItems}>{user}</div>
         </nav>
       </div>
     </div>
   );
 };
 
-const mapStateToProps = (state: RootState) => ({
-  ...state,
-  currentUser: state.user.currentUser,
-});
-
-export default connect(mapStateToProps)(Header);
+export default Header;

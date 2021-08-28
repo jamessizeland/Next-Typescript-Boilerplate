@@ -1,33 +1,23 @@
 import React from 'react';
-import { connect, ConnectedProps } from 'react-redux';
 import { Formik, Form, FormikProps } from 'formik';
 import FormikInput from '../Formik/formikInputs';
-import { setCurrentUser } from '../../redux/user/user.actions';
+import { setCurrentUser, unsetCurrentUser } from '../../redux/user/user.slice';
 import style from './login.module.scss';
 
-// import { useAppDispatch, useAppSelector } from '../../redux/hooks';
-import { AppDispatch } from '../../redux/store';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 
 const defaultUser = {
   user: '',
 };
 
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  setCurrentUser: (user: string) => dispatch(setCurrentUser(user)),
-});
-
-const connector = connect(null, mapDispatchToProps);
-
-const LoginForm = ({
-  // eslint-disable-next-line @typescript-eslint/no-shadow
-  setCurrentUser,
-}: ConnectedProps<typeof connector>): JSX.Element => {
+const LoginForm = (): JSX.Element => {
+  const dispatch = useAppDispatch();
   return (
     <Formik
       initialValues={defaultUser}
       onSubmit={(values, actions) => {
         actions.setSubmitting(true);
-        setCurrentUser(values.user);
+        dispatch(setCurrentUser(values.user));
         setTimeout(() => {
           actions.setSubmitting(false);
         }, 1000);
@@ -53,4 +43,4 @@ const LoginForm = ({
   );
 };
 
-export default connector(LoginForm);
+export default LoginForm;
