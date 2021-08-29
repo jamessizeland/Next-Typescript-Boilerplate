@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { getUser } from '../../redux/user/user.slice';
-import { useAppSelector } from '../../redux/hooks';
+import { getUser } from '../../store/user/userReducer';
+import { useAppSelector } from '../../store/hooks';
 import style from './header.module.scss';
 
 const Header = (): JSX.Element => {

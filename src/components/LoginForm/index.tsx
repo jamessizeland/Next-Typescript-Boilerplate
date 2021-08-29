@@ -1,10 +1,14 @@
 import React from 'react';
 import { Formik, Form, FormikProps } from 'formik';
 import FormikInput from '../Formik/formikInputs';
-import { setCurrentUser, unsetCurrentUser } from '../../redux/user/user.slice';
+import {
+  getUser,
+  setCurrentUser,
+  unsetCurrentUser,
+} from '../../store/user/userReducer';
 import style from './login.module.scss';
 
-import { useAppDispatch, useAppSelector } from '../../redux/hooks';
+import { useAppDispatch, useAppSelector } from '../../store/hooks';
 
 const defaultUser = {
   user: '',
@@ -12,6 +16,7 @@ const defaultUser = {
 
 const LoginForm = (): JSX.Element => {
   const dispatch = useAppDispatch();
+  const user = useAppSelector(getUser);
   return (
     <Formik
       initialValues={defaultUser}
@@ -33,9 +38,21 @@ const LoginForm = (): JSX.Element => {
           >
             <FormikInput label="User Name" name="user" type="text" />
             <br />
-            <button type="submit">
-              {isSubmitting ? 'Submitting' : 'Submit'}
-            </button>
+            {user === '' || user === null ? (
+              <button type="submit">
+                {isSubmitting ? 'Submitting' : 'Login'}
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={() => {
+                  console.log('click');
+                  dispatch(unsetCurrentUser());
+                }}
+              >
+                {isSubmitting ? 'Submitting' : 'Logout'}
+              </button>
+            )}
           </Form>
         );
       }}

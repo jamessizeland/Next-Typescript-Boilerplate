@@ -5,7 +5,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
-import { store } from '../redux/store';
+import { store } from '../store/store';
 import '../styles/globals.scss';
 
 import type { AppProps } from 'next/app';
