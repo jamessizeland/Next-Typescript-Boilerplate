@@ -7,6 +7,7 @@ import Head from 'next/head';
 import { Provider } from 'react-redux';
 import { store } from '../store/store';
 import '../styles/globals.scss';
+import 'tailwindcss/tailwind.css';
 
 import type { AppProps } from 'next/app';
 
