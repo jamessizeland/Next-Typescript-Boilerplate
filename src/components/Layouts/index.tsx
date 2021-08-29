@@ -18,9 +18,13 @@ const Layout = ({
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <Header />
-    <main>{children}</main>
-    <Footer />
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-1 lg:container px-4 py-6 mx-auto md:px-6 md:py-12">
+        {children}
+      </main>
+      <Footer />
+    </div>
   </>
 );
 

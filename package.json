@@ -31,6 +31,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
     "@typefaces-pack/typeface-inter": "^1.0.3",
+    "classnames": "^2.3.1",
     "clsx": "^1.1.1",
     "express": "^4.17.1",
     "fontsource-metropolis": "^3.1.5",
@@ -87,6 +88,10 @@
     "jest-cli": "^24.9.0",
     "lint-staged": "^10.0.3",
     "postcss": "^8.3.6",
+    "postcss-100vh-fix": "1.0.2",
+    "postcss-flexbugs-fixes": "5.0.2",
+    "postcss-hover-media-feature": "1.0.1",
+    "postcss-preset-env": "6.7.0",
     "prettier": "^2.2.1",
     "react-test-renderer": "^17.0.1",
     "sass": "^1.38.0",

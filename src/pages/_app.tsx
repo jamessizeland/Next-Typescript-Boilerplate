@@ -6,7 +6,7 @@ import React from 'react';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
 import { store } from '../store/store';
-import '../styles/globals.scss';
+import Layout from '../components/Layouts';
 import 'tailwindcss/tailwind.css';
 
 import type { AppProps } from 'next/app';
@@ -25,7 +25,9 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         <link rel="icon" href="/longtail.png" />
       </Head>
       <Provider store={store}>
-        <Component {...pageProps} />
+        <Layout title={'Next.js'}>
+          <Component {...pageProps} />
+        </Layout>
       </Provider>
     </React.StrictMode>
   );
