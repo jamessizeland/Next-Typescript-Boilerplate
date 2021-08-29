@@ -5,6 +5,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
+import { store } from '../store/store';
 import '../styles/globals.scss';
 
 import type { AppProps } from 'next/app';
@@ -22,7 +23,9 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         />
         <link rel="icon" href="/longtail.png" />
       </Head>
-      <Component {...pageProps} />
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
     </React.StrictMode>
   );
 };

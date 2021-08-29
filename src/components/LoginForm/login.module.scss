@@ -1,0 +1,18 @@
+.form {
+  position: relative;
+  justify-content: center;
+  padding: 10px;
+  height: auto;
+  border: solid 1px black;
+  label {
+    display: block;
+    padding: 5px 0;
+  }
+  input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  button {
+    display: block;
+  }
+}
