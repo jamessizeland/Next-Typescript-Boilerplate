@@ -10,11 +10,11 @@ const Header = (): JSX.Element => {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-600">
+    <header className="bg-primary">
       <div className="flex flex-wrap items-center justify-between lg:container px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
         <div className="flex items-center">
           <Image
-            src="/longtail.png"
+            src="/logo192.png"
             width={40}
             height={40}
             priority

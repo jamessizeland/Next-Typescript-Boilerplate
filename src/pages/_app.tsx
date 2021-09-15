@@ -22,7 +22,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
           name="description"
           content="Built from jsizeland/Next-Typescript-Boilerplate"
         />
-        <link rel="icon" href="/longtail.png" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
       <Provider store={store}>
         <Layout title={'Next.js'}>

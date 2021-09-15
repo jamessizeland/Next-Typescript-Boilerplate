@@ -1,13 +1,4 @@
-const { nextI18NextRewrites } = require('next-i18next/rewrites');
-
-const localeSubpaths = {
-  en: 'en',
-  es: 'es',
-};
-
+/** @type {import('next').NextConfig} */
 module.exports = {
-  rewrites: async () => nextI18NextRewrites(localeSubpaths),
-  publicRuntimeConfig: {
-    localeSubpaths,
-  },
+  reactStrictMode: true,
 };

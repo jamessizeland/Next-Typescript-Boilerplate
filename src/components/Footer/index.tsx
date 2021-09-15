@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer(): JSX.Element {
   return (
-    <footer className="bg-blue-600">
+    <footer className="bg-secondary">
       <ul className="flex items-center justify-between lg:container px-4 py-6 mx-auto text-sm text-white md:px-6">
         <li>
           <a

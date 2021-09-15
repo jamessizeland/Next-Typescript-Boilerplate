@@ -2,14 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import style from './banner.module.scss';
 
-const pix = 200;
+const pix = 300;
 
 const Banner = (): JSX.Element => {
   return (
     <div className={style.banner}>
       <Image
-        className={style.logo}
-        src="/longtail.png"
+        className={style.appLogo}
+        src="/logo.svg"
         alt="next-typescript-boilerplate"
         width={pix}
         height={pix}

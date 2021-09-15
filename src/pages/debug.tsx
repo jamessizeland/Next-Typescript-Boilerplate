@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactJson from 'react-json-view';
 import { useAppSelector } from '../store/hooks';
 
 import type { NextPage } from 'next';
@@ -10,7 +9,7 @@ const DebugPage: NextPage = () => {
   return (
     <div className={'container'}>
       <h1>Debugger</h1>
-      <ReactJson src={globalState} />
+      <p>{JSON.stringify(globalState)}</p>
     </div>
   );
 };
