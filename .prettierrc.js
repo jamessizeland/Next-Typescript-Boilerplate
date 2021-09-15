@@ -10,12 +10,3 @@ module.exports = {
   printWidth: 80, // Specify the line length that the printer will wrap on.
   proseWrap: 'preserve', // wrap markdown text as-is since some services use a linebreak-sensitive renderer, e.g. GitHub comment and BitBucket.
 };
-// {
-//   "arrowParens": "avoid",
-//   "singleQuote": true,
-//   "jsxBracketSameLine": true,
-//   "trailingComma": "es5",
-//   "printWidth": 120,
-//   "semi": true,
-//   "endOfLine": "lf"
-// }

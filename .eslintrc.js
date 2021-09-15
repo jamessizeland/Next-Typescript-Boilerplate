@@ -39,7 +39,6 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'no-unused-vars': 'warn',
     'react/jsx-one-expression-per-line': 'off',
-    'no-unused-vars': 'off',
   },
   // overrides: [
   //   {
