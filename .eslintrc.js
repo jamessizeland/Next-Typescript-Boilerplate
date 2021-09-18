@@ -38,6 +38,7 @@ module.exports = {
   rules: {
     // 'arrow-body-style': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'react/prop-types': 'off',
     // 'no-unused-vars': 'warn',
     // 'react/jsx-one-expression-per-line': 'off',
   },
