@@ -25,7 +25,7 @@
   },
   // force format on save to be enabled for this project
   "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "file",
-  "appService.deploySubpath": ".",
-  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"]
+  "editor.formatOnSaveMode": "file"
+  // "appService.deploySubpath": ".",
+  // "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"]
 }
