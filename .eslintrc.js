@@ -15,6 +15,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   extends: [
+    'next/core-web-vitals',
     'plugin:react/recommended',
     'airbnb-typescript',
     'airbnb/hooks',
@@ -23,7 +24,7 @@ module.exports = {
     'prettier/@typescript-eslint', // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
     'plugin:prettier/recommended', // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
-  plugins: ['react', 'react-hooks', 'jest', '@typescript-eslint', 'import'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'import'],
   settings: {
     react: {
       pragma: 'React',
@@ -35,10 +36,10 @@ module.exports = {
   },
   ignorePatterns: ['/*.*'], // required to stop this file erroring itself
   rules: {
-    'arrow-body-style': 'off',
+    // 'arrow-body-style': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'no-unused-vars': 'warn',
-    'react/jsx-one-expression-per-line': 'off',
+    // 'no-unused-vars': 'warn',
+    // 'react/jsx-one-expression-per-line': 'off',
   },
   // overrides: [
   //   {

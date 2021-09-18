@@ -1,8 +1,8 @@
 {
   "files.associations": {
     ".babelrc": "jsonc",
-    ".eslintrc": "jsonc",
-    ".prettierrc": "jsonc",
+    ".eslintrc": "js",
+    ".prettierrc": "js",
     ".eslintignore": "ignore"
   },
 
@@ -26,4 +26,6 @@
   // force format on save to be enabled for this project
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file"
+  // "appService.deploySubpath": ".",
+  // "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"]
 }

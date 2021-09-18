@@ -5,7 +5,7 @@ import type { NextPage } from 'next';
 const GraphPage: NextPage = () => {
   return (
     <div className={'container'}>
-      <p>Graph</p>
+      <p>About Page</p>
     </div>
   );
 };
